@@ -1,0 +1,79 @@
+html{
+   height: 100%;
+}
+
+body{
+    background: linear-gradient(to left top, black, grey, white);
+    background-repeat: no-repeat;
+    font: 20px verdana, sans-serif;
+    padding: 50px;
+}
+
+.floating {
+    position: relative;
+    width: 400px;
+    height: 100px;
+    font-color: black;
+    animation: move 10s ease infinite;
+    opacity: 1;
+    text-align:center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+@keyframes move{
+    0%   {
+	left: 0px;
+	top: 40px;
+	background: white;
+	opacity: 1;
+    }
+    25%  {
+	left: 150px;
+	top: 250px;
+	background: grey;
+	opacity: .1;
+    }
+    50%  {
+	left: 600px;
+	top: 500px;
+	background: black;
+	opacity: 0;
+    }
+    75%  {
+	left: 1000px;
+	top: 400px;
+	background: grey;
+	opacity: .1;
+    }
+    100% {
+	left: 0px;
+	top: 40px;
+	opacity: 1;
+	background: white;
+    }
+}
+
+.stuff {
+    color: black;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+	transform: translateX(90%);
+	opacity: 0;
+    }
+    25%{
+	opacity: 0;
+    }
+    50% {
+	opacity: 0.1;
+    }
+    75%{
+	opacity: 0;
+    }
+    100% {
+	transform: translateX(0%);
+	opacity: 1;
+    }
+}
