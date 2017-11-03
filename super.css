@@ -5,19 +5,19 @@ html{
 body{
     background: linear-gradient(to left top, black, grey, white);
     background-repeat: no-repeat;
-    font: 20px verdana, sans-serif;
+    font-family: 'Press Start 2P', cursive;
     padding: 50px;
 }
 
 .floating {
     position: relative;
-    width: 400px;
+    width: 500px;
     height: 100px;
     font-color: black;
     animation: move 10s ease infinite;
     opacity: 1;
     text-align:center;
-    font-family: 'Press Start 2P', cursive;
+    padding: 10px;
 }
 
 @keyframes move{
