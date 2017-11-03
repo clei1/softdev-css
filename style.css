@@ -1,0 +1,57 @@
+body{
+    background: black;
+}
+
+h1 {
+    margin:12%;
+    background: white;
+    font-size: 100px;
+    text-align: center;
+    animation: neon 4s ease infinite;
+}
+
+@keyframes neon{
+    0%,
+    100% {
+	text-shadow: 0 0 1vw #FA1C16;
+	color: #FED128;
+    }
+    50% {
+	text-shadow: 0 0 .5vw #800E0B;
+	color: #806914;
+    }
+}
+
+h2{
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    width:60%;
+    background: #69B6AD;
+    border-radius: 15%;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h3 {
+    background-image: url("http://a.dilcdn.com/bl/wp-content/uploads/sites/6/2015/10/tfa_poster_wide_header-1536x864-959818851016.jpg");
+    color: white;
+    border: white 2px;
+}
+
+p{
+    font-size: 15px;
+    text-align: center;
+    animation: yellow 4s ease infinite;
+}
+
+@keyframes yellow{
+    0%,
+    100% {
+	text-shadow: 0 0 1vw #692A20;
+	color: #1EE83C;
+    }
+    50% {
+	text-shadow: 0 0 .7vw #E82000;
+	color: #00DBE8;
+    }
+}
